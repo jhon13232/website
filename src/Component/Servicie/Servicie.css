@@ -1,0 +1,39 @@
+.sservicies_content{
+  gap: 4rem;
+}
+.servicies_content--item{
+  padding: 2rem;
+}
+.servicies_content--item .icon{
+  width: 60px;
+  margin: 0;
+  opacity: 0.7;
+
+}
+.servicies_content--item .text{
+  margin: 2rem 0;
+  opacity:0.8;
+
+}
+.servicies_content--item .para_text{
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+  .servicies_content{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (min-width:992px){
+  .servicies_content{
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+}
+@media screen and (min-width:1200px){
+  .servicies_content{
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+} 

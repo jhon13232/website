@@ -1,0 +1,32 @@
+.header{
+  min-height: 100vh;
+}
+.header_content{
+  min-height: calc(100vh - 106px);
+  flex-direction: column;
+}
+.header_title{
+  font-size: 4.1rem;
+  line-height: 1.2;
+}
+.header_content .para_text{
+  padding: 3.6rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media(min-width: 992px){
+  .header_content{
+    flex-direction: row;
+  }
+  .header_content--right{
+    text-align: left;
+    width: 50%;
+  }
+  .header_content--left{
+    width: 50%;
+  }
+  .header_content--right .para_text{
+    margin-left: 0;
+  }
+}
